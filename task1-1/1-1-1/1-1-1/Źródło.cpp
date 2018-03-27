@@ -4,7 +4,7 @@
 /* Deklaracja wyprzedzaj¹ca: funkcja obs³ugi okna */
 LRESULT CALLBACK WindowProcedure(HWND, UINT, WPARAM, LPARAM);
 /* Nazwa klasy okna */
-char szClassName[] = "PRZYKLAD";
+char szClassName[] = "z1-1-1";
 
 int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance,
 	LPSTR lpszArgument, int nFunsterStil)
@@ -29,7 +29,7 @@ int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance,
 	wincl.cbClsExtra = 0;
 	wincl.cbWndExtra = 0;
 	/* Jasnoszare t³o */
-	wincl.hbrBackground = (HBRUSH)GetStockObject(LTGRAY_BRUSH);
+	wincl.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
 
 	/* Rejestruj klasê okna */
 	if (!RegisterClassEx(&wincl)) return 0;
@@ -38,7 +38,7 @@ int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance,
 	hwnd = CreateWindowEx(
 		0,
 		szClassName,
-		"PRZYKLAD",
+		"z1-1-1",
 		WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT,
 		CW_USEDEFAULT,
@@ -65,16 +65,16 @@ int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance,
 }
 
 int xSize, ySize, x, y, a;
-
+RECT r;
 /* Tê funkcjê wo³a DispatchMessage( ) */
 LRESULT CALLBACK WindowProcedure(HWND hwnd, UINT message,
 	WPARAM wParam, LPARAM lParam)
 {
-	char sText[] = "Witamy w GDI";
+	char sText[] = "z1-1-1";
 	HDC         hdc; // kontekst urz¹dzenia
 	int         i;
 	PAINTSTRUCT ps;
-	RECT r;
+	
 
 	HPEN   hPen;
 	HBRUSH hBrush;
@@ -95,7 +95,7 @@ LRESULT CALLBACK WindowProcedure(HWND hwnd, UINT message,
 	case WM_PAINT:
 		hdc = BeginPaint(hwnd, &ps);
 
-		// linie             
+           
 		hPen = CreatePen(PS_SOLID, 2, RGB(0, 0, 0));
 		SelectObject(hdc, hPen);
 		MoveToEx(hdc, xSize / 2, 0, NULL);
@@ -117,7 +117,6 @@ LRESULT CALLBACK WindowProcedure(HWND hwnd, UINT message,
 			LineTo(hdc, xSize, ySize / 2 - xSize / 2);
 		}
 		MoveToEx(hdc, xSize / 2, ySize / 2, NULL);
-
 		if (ySize < xSize) {
 			LineTo(hdc, xSize / 2 - ySize / 2, 0);
 		}
@@ -150,27 +149,6 @@ LRESULT CALLBACK WindowProcedure(HWND hwnd, UINT message,
 			a += 1;
 		}
 		DeleteObject(hPen);
-		// kszta³ty
-		/*
-		SetBkColor(hdc, RGB(0, 255, 0));
-		hBrush = CreateHatchBrush(HS_CROSS, RGB(0, 0, 255));
-		SelectObject(hdc, hBrush);
-		r.left = 10;
-		r.top = 10;
-		r.right = 50;
-		r.bottom = 50;
-		FillRect(hdc, &r, hBrush);
-		DeleteObject(hBrush);
-		*/
-		/*
-		// tekst
-		if (xSize > 0 && ySize > 0)
-		{
-		SetTextAlign(hdc, TA_CENTER | VTA_CENTER);
-		SetBkMode(hdc, TRANSPARENT);
-		TextOut(hdc, xSize / 2, 20, sText, strlen(sText));
-		}
-		*/
 		EndPaint(hwnd, &ps);
 		break;
 

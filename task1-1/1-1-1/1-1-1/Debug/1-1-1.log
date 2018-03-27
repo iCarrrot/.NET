@@ -1,0 +1,4 @@
+﻿  Źródło.cpp
+c:\users\michal\documents\github\.net\task1-1\1-1-1\1-1-1\źródło.cpp(80): warning C4101: "hBrush": lokalna zmienna, do której nie istnieje odwołanie
+c:\users\michal\documents\github\.net\task1-1\1-1-1\1-1-1\źródło.cpp(75): warning C4101: "i": lokalna zmienna, do której nie istnieje odwołanie
+  1-1-1.vcxproj -> C:\Users\michal\Documents\GitHub\.NET\task1-1\1-1-1\Debug\1-1-1.exe
