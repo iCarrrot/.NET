@@ -1,0 +1,11 @@
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\bin\Debug\netcoreapp2.0\z2-4-5.deps.json
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\bin\Debug\netcoreapp2.0\z2-4-5.runtimeconfig.json
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\bin\Debug\netcoreapp2.0\z2-4-5.runtimeconfig.dev.json
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\bin\Debug\netcoreapp2.0\z2-4-5.dll
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\bin\Debug\netcoreapp2.0\z2-4-5.pdb
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\obj\Debug\netcoreapp2.0\z2-4-5.csprojResolveAssemblyReference.cache
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\obj\Debug\netcoreapp2.0\z2-4-5.csproj.CoreCompileInputs.cache
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\obj\Debug\netcoreapp2.0\z2-4-5.AssemblyInfoInputs.cache
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\obj\Debug\netcoreapp2.0\z2-4-5.AssemblyInfo.cs
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\obj\Debug\netcoreapp2.0\z2-4-5.dll
+C:\Users\michal\Documents\GitHub\.NET\task2-4\z2-4-5\z2-4-5\obj\Debug\netcoreapp2.0\z2-4-5.pdb
